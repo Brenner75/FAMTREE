@@ -1,0 +1,282 @@
+   56Georg               Schmidt             
+   57Karoline            Stîhr               
+   59Anna                Mayer               
+   60Leopold             Hawelka             
+   61Dorothea            Holoubek            
+   63Viktoria            Pogorsky            
+  100Franz               Fehringer           Stetteldorf_am_Wagrm
+  124Josef               Spath               
+  192Anton               Brenner             Prestendorf         
+  195Theresia            Habinger            
+  196Karl                Marek               
+  198Peter               Fiedler             OlmÅtz              
+  202Leopold             Schuster            
+  203Katharina           Strasser            
+  215Anna                Steinhauser         
+  219Maria               Kalliwoda           
+  222Anton               Gindra              
+  390Johann              Habinger            
+  394Michel              Kirchner            
+  402Matthias            Rath                Gars/Kamp           
+  403Anna Maria          Bartik              Gars/Kamp           
+  410Michael             Klein               
+  411Theresia            Prellin (Prennerin  
+  414Matthias            Schauer             
+  415Katharina           Pesna               
+  417Viktoria            Solorskin           
+  420Johann              Schwarz             
+  421Theresia            (Name unbekannt)    
+  422Jakob Gottfried     Ba·ner              
+  423Maria Anna          (Name unbekannt)    
+  424Johann              Schmarda            
+  425Katharina           (Name unbekannt)    
+  426Franz               Svoboda             
+  427Marianna            Novotny             
+  430Ignaz               Steinhauser         
+  431Eva                 Ulram               
+  434Josef               Windhager           Pfarrkirchen        
+  443Maria Magdalena     Michal              
+  836Michael             Heintzel            
+  838Georg               Fidler              JÑgerndorf          
+  839Katharina           Hattenburger        JÑgerndorf          
+  864Franz Anton         Mock                
+  865Anna Marie          Huster              
+  880Johann Michael      Binder              Gross_Gerungs       
+  883Barbara             (Name unbekannt)    
+ 1676Thobias             Fiedler             JÑgerndorf
+ 1678Franz               Hattenburger        JÑgerndorf
+ 1728Franz Anton         Mock                
+ 1729Maria Magdalena     Dangel              Saulgau
+ 1762Leopold             Rogner              Frauendorf
+ 1763Maria Anna          (Name unbekannt)    Frauendorf
+ 1808Horst               Gewitzsch           Dortmund            
+ 1811Ernst               Schmidt             Wien
+ 1812Richard             Schmidt             
+ 1813Franz               Brenner             Stockerau
+ 1814Mary                Bock                Wien
+ 1821Margarete           Mohar               Antonskirche_in_Wien
+ 1829Stefanie            Hawelka             Wien
+ 1830Helene              Brenner             Groissenbrunn
+ 1831(Vorname unbekannt) Bauer               Groissenbrunn
+ 1832Franz               Brenner             Groissenbrunn
+ 1833Anna                Lederbauer          
+ 1834Franz               Brenner             Stockerau
+ 1835Hedwig              Brenner             Stockerau
+ 1836Karl                Brenner             Stockerau
+ 1837Anton               Brenner             Groissenbrunn
+ 1838Johanna             (Name unbekannt)    
+ 1839Johanna             Brenner             Stockerau
+ 1840Julie               Brenner             Groissenbrunn
+ 1842Hermine             Petrak              Bîhmen
+ 1843Leopoldine          Petrak              Bîhmen
+ 1844(Vorname unbekannt) Ritzinger           Bîhmen
+ 1845Anna                Brenner             Groissenbrunn
+ 1846Hermine             Brenner             Groissenbrunn
+ 1847Franz               Bohacek             Groissenbrunn
+ 1848Karoline            Brenner             Groissenbrunn
+ 1849Franz               Fehringer           Gaisruck
+ 1850Maria               Ilsinger            
+ 1851Franz               Fehringer           Gaisruck
+ 1852Leopold             Fehringer           Gaisruck
+ 1853Anna                Fehringer           Gaisruck
+ 1854Marie               Fehringer           Gaisruck
+ 1855Rosina              Fehringer           Gaisruck
+ 1856Karl                Fehringer           Gaisruck
+ 1857Marie               Wasner              
+ 1858Marie               Fehringer           Gaisruck
+ 1861Franz               Rauscher            Mitterstockstall
+ 1862Karl                Rauscher            Mitterstockstall
+ 1863Marie               Rauscher            Mitterstockstall
+ 1864Therese             Fehringer           Gaisruck
+ 1865Franz               Heindl              
+ 1866Hildegard           Heindl              
+ 1867Marie               Fehringer           Gaisruck
+ 1868Katharina           Fehringer           Gaisruck
+ 1869Anton               Fehringer           
+ 1870Karl                Fehringer           
+ 1871Julie               Fehringer           
+ 1872Josef               Fehringer           
+ 1873Anna                Fehringer           Gaisruck
+ 1874Franz               Schuster            
+ 1875Franz               Schuster            
+ 1876Anna                Schuster            
+ 1878Emma                Kîrber              JÑgerndorf
+ 1880Elisabeth           Kîrber              JÑgerndorf
+ 1881Franz               Kuhn                JÑgerndorf
+ 1882Emil                Spath               Kirchberg/Wechsel
+ 1884Stefan              Gross               Wien
+ 1887Gustav              Schrott             
+ 1888Elfriede            Schrotter           
+ 1889Gusti               Schrotter           
+ 1890(Vorname unbekannt) Ehlert              
+ 1891Paul                Werner              
+ 1892Andreas             Werner              
+ 1893Aloisia             Spath               Kirchberg/Wechsel
+ 1894Franz               Ronzer              
+ 1895Franz               Ronzer              Altersheim_Lainz    
+ 1896Viktor              Srna                Altersheim_Lainz
+ 1897Hermine             (Name unbekannt)    
+ 1898Hermine             Srna                Kirchberg/Wechsel
+ 1899Karolina            Marek               Drahutusch
+ 1900Johann              Zoder               Drahutusch
+ 1901(Vorname unbekannt) Fehringer           Ziersdorf
+ 1902Katharina           (Name unbekannt)    Ziersdorf
+ 1903Karl                Binder              Wien_V_St._Josef
+ 1904Josef               Binder              Wien_V_St._Josef
+ 1905Johanna             Binder              Wien_V_St._Josef
+ 1906Hans                Binder              Wien_V_St._Josef
+ 1907Hanni               (Name unbekannt)    Wien_V_St._Josef
+ 1908Emma                (Name unbekannt)    
+ 1909Josef               Binder              Baden
+ 1915Karl                Scholz              Wien
+ 1916Anna                Scholz              Wien
+ 1917Josef               Tinz                
+ 1918Therese             Tinz                
+ 1919(Vorname unbekannt) Doktor              
+ 1920Berta               Doktor              
+ 1921Hermine             Gindra              Deutsch_Wagram      
+ 1923Georg               Svoboda             
+ 1924(Vorname unbekannt) Mock                Wien
+ 1925(Vorname unbekannt) Mock                Wien
+ 1926(Vorname unbekannt) Mock                Wien
+ 1927(Vorname unbekannt) Mock                Wien
+ 1928(Vorname unbekannt) Mock                Wien
+ 1929(Vorname unbekannt) Mock                Wien
+ 1930(Vorname unbekannt) Mock                Wien
+ 1931Martin              Prenner (Brenner)   Bad_Hall
+ 1933Franz               Prazak              
+ 1934Georg               Schmidt             
+ 1935(Vorname unbekannt) (Name unbekannt)    
+ 1936(Vorname unbekannt) Schmidt             Schrattenberg
+ 1937(Vorname unbekannt) Skobodal            Schrattenberg
+ 1938(Vorname unbekannt) Schmidt             Schrattenberg
+ 1939Franz               Schmidt             
+ 1940(Vorname unbekannt) (Name unbekannt)    
+ 1941Franz               Schmidt             Schrattenberg
+ 1942Michael             Binder              Wien_V_St._Josef
+ 1943(Vorname unbekannt) Binder              Baden
+ 1944Josefa Alexandrina  Mock                Wien_Strozzigrund
+ 1946(Vorname unbekannt) verh. Smutny        
+ 1947(Vorname unbekannt) Smutny              
+ 1948Franz               Smutny              
+ 1949Anna                Umlauf              Wien                
+ 1954Monika              (Name unbekannt)    Wien
+ 1955Karl                Dorrek              
+ 1956Josefine            (Name unbekannt)    
+ 1957Anna                Erben               Wien
+ 1958Richard             Schmidt             Wien
+ 1959Roswitha            Voglmeier           Graz                
+ 1961Marie               Mohar               
+ 1962Rudolf              Fresnik             
+ 1963Inge                Fresnik             
+ 1965Alois               Mohar               
+ 1966(Vorname unbekannt) (Name unbekannt)    
+ 1967Dieter              Mohar               
+ 1968Bertl               Mohar               
+ 1969Manuela             Otepka              Wien
+ 1970Josef               Schmid              
+ 1971Simon               Schmid              
+ 1972Judith              Schmid              
+ 1973Hilda               Rauscher            Mitterstockstall
+ 1974(Vorname unbekannt) (Name unbekannt)    
+ 1975Hermine             van Poppel          Holland
+ 1976Karl                Kuhn                
+ 1977Lina                Kuhn                
+ 1978(Vorname unbekannt) (Name unbekannt)    
+ 1979(Vorname unbekannt) (Name unbekannt)    
+ 1980Hilde               Kuhn                
+ 1981Heinrich            Eickhoff            
+ 1982Karoline            MÅllner             
+ 1983Friedrich           Schneewei·          Graz                
+ 1984(Vorname unbekannt) (Name unbekannt)    Kirchberg/Wechsel
+ 1985Alois               Spath               Kirchberg/Wechsel
+ 1986Gustav              Schrotter           
+ 1987(Vorname unbekannt) Srna                Altersheim_Lainz
+ 1988(Vorname unbekannt) (Name unbekannt)    Altersheim_Lainz
+ 1989(Vorname unbekannt) Mann                
+ 1990(Vorname unbekannt) Mann                
+ 1991(Vorname unbekannt) Mann                
+ 1992Wilhelm             Scholz              Wien
+ 1993Paula               (Name unbekannt)    
+ 1994Helene              Scholz              Wien
+ 1995Paula               Scholz              Wien
+ 1997Paul                von Schlihavsky     Salzburg
+ 1998Marie Helen         von Schilhavsky     Salzburg
+ 1999Bernhard            Rudofsky            
+ 2000(Vorname unbekannt) Schwatschek         Ungarn
+ 2001(Vorname unbekannt) Hausner             Wien
+ 2008Toni                Kîrber              Deutsch_Wagram
+ 2009Hans                Provin              
+ 2010(Vorname unbekannt) (Name unbekannt)    Wien
+ 2011(Vorname unbekannt) Erben               Wien
+ 2016Jakob               Meier               
+ 2019Gabi                Gîdel               MÅnchen
+ 2020Klaus               Gîdel               
+ 2022(Vorname unbekannt) Franz               Hohenthan
+ 2023(Vorname unbekannt) (Name unbekannt)    Hohenthan
+ 2025(Vorname unbekannt) (Name unbekannt)    MÅnchen
+ 2026(Vorname unbekannt) Maier               MÅnchen
+ 2027(Vorname unbekannt) Gîdel               Strehlen/Schlesien
+ 2028(Vorname unbekannt) (Name unbekannt)    Strehlen/Schlesien
+ 2029Hans                Franz               Hohenthan
+ 2030Inge                Gîdel               
+ 2031Rosi                Maier               MÅnchen
+ 2041Helga               Goetz               MÅnchen
+ 2042Traude              (Name unbekannt)    
+2043 Walter              Brenner             Stockerau
+2044 Peter               Brenner             Stockerau
+2045 Helga               Brenner             
+2046 Otto                Dangl               Stockerau
+2047 Hilde               (Name unbekannt)    Stockerau
+2049 Franziska           (Name unbekannt)    Salzburg
+2051 Maria               Dangel              Saulgau
+2052 Maria Agnes         Dangel              Saulgau
+2053 Anna Elisabeth      Mock                
+2054 Franz Jakob         Mock                Saulgau
+2055 Katharina           Horb                
+2056 Manfred             Harbˆck             MÅnchen
+2058                     Obsolete            
+2060 Ludwig Timotheus    Moll                H‰selgehr           
+2062 Josef Anton         Pitschnau           Strotlach?          
+2064 Anton               Prantauer           Unterhˆfen
+2065 Maria Theresia      Wolf                Unterhˆfen
+2066 Maria Anna Walburga Kohler              H‰selgehr
+2067 Johann              Kohler              H‰selgehr
+2068 Theresia            Weirather           H‰selgehr
+2069 Martin              Moll                H‰selgehr
+2070 Maria Anna          Langin              H‰selgehr
+2071 Christian           Pitschnau           Strotlach?
+2072 Josefa              Vonier              Strotlach?
+2073 Benjamin            Zobl                Friesach (K‰rnten)
+2076 Gottlieb            Zobl                Friesach (K‰rnten)
+2077 Helmut              Zobl                
+2078 (Name unbekannt)    Zobl                
+2079 (Name unbekannt)    Moidl               
+2080 (Vorname unbekannt) (Name unbekannt)    
+2081 (Vorname unbekannt) (Name unbekannt)    
+2087 Franz               Zobl                
+2092 Johann              Baumgartner         Hals
+2093 Ursula              Tringg              Hals
+2094 Barbara             Verdroﬂ             Hals
+2110 Johann Andreas      Aman                Feldkirch
+2111 Katharina           Lins(in)            Feldkirch
+2112 4                   Hueber(in)          Kappl
+2113 Katharina           Sigel(in)           Kappl
+2114 Johann              Marth(in)           Kappl
+2115 Maria Ursula        Geiger(in)          Kappl
+2116 Josef               Ladner(in)          Kappl
+2117 Maria Eleonora      Mayerin             Kappl
+2118 Johann              Zobl                
+2119 Rosina              Zegg                Hals
+2120 Christoph           Zobl                Prutz
+2122 Maria               Lofin               Prutz
+2123 Anna Maria          Zobl                Prutz
+2124                     obsolete            
+2125 Katharina           Zobl                Prutz
+2126 Christoph zu Zams   Zobl                
+2127 Paul zu Prutz       Zobl                
+2128 Georg               Zobl                
+2129 Matth‰us            Zobl                
+2130 Ursula              Glazl               Prutz
+2131 Barbara             Schichtner          Prutz
+2132 Christoph           Zobl                Prutz
