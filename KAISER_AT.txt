@@ -1,0 +1,24 @@
+1916;des Habsburg-Lothringer Kaisers Karl I;the Emperor Karl I of Habsburg-Lothringen;
+1848;des Habsburg-Lothringer Kaisers Franz-Joseph I;the Emperor Franz-Joseph I of Habsburg-Lothringen;
+1825;des Habsburg-Lothringer Kaisers Ferdinand I;the Emperor Ferdinand I of Habsburg-Lothringen;
+1792;des Habsburg-Lothringer Kaisers Franz II;the Emperor Franz II of Habsburg-Lothringen;
+1790;des Habsburg-Lothringer Kaisers Leopold II;the Emperor Leopold II of Habsburg-Lothringen;
+1780;des Habsburg-Lothringer Kaisers Joseph II;the Emperor Joseph II of Habsburg-Lothringen;
+1765;der Habsburg-Lothringer Kaiserin Maria Theresia;the  Emperess Maria Theresia of Habsburg-Lothringen;
+1745;des Kaisers Franz I. Stephan von Lothringen;the Emperor Franz I. Stephan of Lothringenen;
+1742;des Wittelsbacher Kaisers Karl VII;the Emperor Karl VII of the House of Wittelsbach;
+1711;des Habsburger Kaisers Karl VI;th Emperor Karl VI of the House of Hapsburg;
+1705;des Habsburger Kaisers Joseph I;th Emperor Joseph I of the House of Habsburg;
+1658;des Habsburger Kaisers Leopold I;th Emperor Leopold I of the House of Habsburg;
+1653;des Habsburger Kaisers Ferdinand IV;the Emperor Ferdinand IV of the House of Habsburg;
+1636;des Habsburger Kaisers Ferdinand III;th Emperor Ferdinand III of the House of Habsburg;
+1619;des Habsburger Kaisers Ferdinand II;the Emperor Ferdinand II of the House of Habsburg;
+1612;des Habsburger Kaisers Matthias;the Emperor Matthias of the House of Habsburg;
+1575;des Habsburger Kaisers Rudolf II;the Emperor Rudolf II of the House of Habsburg;
+1562;des Habsburger Kaisers Maximilian II;the Emperor Maximilian II of the House of Habsburg;
+1531;des Habsburger Kaisers Ferdinand I;the Emperor Ferdinand I of the House of Habsburg;
+1519;des Habsburger Kaisers Karl V;the Emperor Karl V of the House of Habsburg;
+1493;des Habsburger Kaisers Maximilian I;the Emperor Maximilian I of the House of Habsburg;
+1440;des Habsburger Kaisers Friedrich III;the Emperor Friedrich III of the House of Habsburg;
+1438;des Habsburger Kaisers Albrecht II;the Emperor Albrecht II of the House of Habsburg;
+

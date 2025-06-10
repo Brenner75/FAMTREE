@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>                                                                                                                                                                                                                                                        
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 40px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #error-message {
+            color: red;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style><meta charset="UTF-8">
+    <html lang="de">
+    <title>Passwort-Eingabe</title>
+<script>
+    async function hashPassword() {
+
+        let password = document.getElementById("password").value;
+
+
+        let hashedPassword = await sha1(password);
+        let fileUrl = hashedPassword + ".html";
+        // Kurzer Redirect-Test
+
+        window.location.href = fileUrl;
+
+        setTimeout(() => {
+            if (document.readyState === "complete" && document.title.includes("404")) {
+                alert("Fehler 404: Datei nicht gefunden!");
+            }
+        }, 2000);  // Warte 2 Sekunden, um zu prüfen, ob die Seite geladen wurde
+    }
+    async function sha1(str) {
+        const buffer = new TextEncoder().encode(str);
+        const hashBuffer = await crypto.subtle.digest("SHA-256", buffer);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        return hashArray.map(byte => byte.toString(16).padStart(2, "0")).join("");
+    }
+</script>
+</head>
+<body>
+<BODY background='A Icons/bgEH.jpg'>                                                                                                                                                                                                                      
+
+
+
+
+
+
+<SMALL><br></SMALL>                                                                                                                                                                                                                                           
+    <h1>A Quick Guide on how to use the Family Tree</h1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1>Now enter your password and click on the button to start surfing!</h1>
+    <input type="password" id="password">
+    <button onclick="hashPassword()">Start surfing!</button>
+    <br><br><br><br>Family Tree Programm version 1.0 (prototype) 06/2025. Software developed by K.G.E. Brenner
+</body>
+</html>
