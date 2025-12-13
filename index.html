@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+    /* Bildcontainer – skaliert automatisch */
+    #bildbereich {
+      text-align: left;
+    }
+
+    #kopf-bild {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Login-Block direkt unter dem Bild */
+    #login-container {
+      margin-left: 10px;
+      margin-top: 0px;
+      background: rgba(255, 255, 255, 0.0);
+      padding: 20px 30px;
+      max-width: 500px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.0);
+    }
+
+    #login-container h1 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    input[type="password"] {
+      width: 90%;
+      max-width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 18px;
+      font-size: 16px;
+      background-color: #006699;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #version-info {
+      margin-top: 20px;
+      font-size: 14px;
+      color: black;
+    }
+
+    #error-message {
+      color: red;
+      margin-top: 10px;
+    }
+input[type="password"],
+input[type="text"].pw-visible {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;  /* macht den Text etwas "geheimsinniger" */
+}
+input.pw-field {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.12em;       /* macht auch Klartext optisch wie **** */
+  padding: 10px;
+  width: 90%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-textfield-decoration-container,
+input[type="password"]::-webkit-clear-button {
+  display: none !important;
+}
+
+input[type="password"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+  </style>
+
+  <script>
+    let reiseFenster = null;
+
+    async function hashPassword() {
+      const pw = document.getElementById("password").value;
+      const hash = await sha1(pw);
+      const url = hash + ".html";
+
+      window.location.href = url;
+      setTimeout(() => {
+        if (document.title.includes("404")) {
+          document.getElementById("error-message").textContent = "⚠️ Datei nicht gefunden.";
+        }
+      }, 2000);
+    }
+
+
+    async function sha1(str) {
+      const buf = new TextEncoder().encode(str);
+      const hashBuf = await crypto.subtle.digest("SHA-256", buf);
+      return Array.from(new Uint8Array(hashBuf)).map(b => b.toString(16).padStart(2, "0")).join("");
+    }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const pwField = document.getElementById("password");
+  const eyeIcon = document.getElementById("toggle-eye");
+
+  // Bild initial anpassen
+  if (pwField.type === "password") {
+    eyeIcon.src = "A Icons/eyeclosed.png";
+    eyeIcon.alt = "Passwort anzeigen";
+    eyeIcon.title = "Passwort anzeigen";
+  } else {
+    eyeIcon.src = "A icons/eyeopen.jpg";
+    eyeIcon.alt = "Passwort verbergen";
+    eyeIcon.title = "Passwort verbergen";
+  }
+
+  // ENTER-Taste aktivieren 👇
+  pwField.addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+      hashPassword();
+    }
+  });
+});
+function togglePassword() {
+  const pwField = document.getElementById("password");
+  const eyeIcon = document.getElementById("toggle-eye");
+
+  const isHidden = pwField.type === "password";
+
+  pwField.type = isHidden ? "text" : "password";
+  pwField.classList.toggle("pw-visible", isHidden);
+
+  // Bild und Alt-Text anpassen
+  eyeIcon.src  = isHidden ? "A Icons/eyeopen.png" : "A icons/eyeclosed.png";
+  eyeIcon.alt  = isHidden ? "Passwort verbergen" : "Passwort anzeigen";
+  eyeIcon.title = eyeIcon.alt;
+}
+</script>
+
+</head>
+ 
+
+<body background="A Icons/bg12.jpg">  <div id="bildbereich">
+    <img src="A Icons/bgEH.jpg" id="kopf-bild" alt="Willkommensbild">
+  </div>
+
+  <div id="login-container">
+    <h1>Bitte Passwort eingeben und los geht’s:</h1>
+
+<input type="password" id="password" class="pw-field" placeholder="Passwort">
+
+<img src="icons/eye-closed.png"
+     id="toggle-eye"
+     alt="Passwort anzeigen"
+     title="Passwort anzeigen"
+     onclick="togglePassword()"
+     style="width: 60px; vertical-align: middle; margin-left: 6px; cursor: pointer;">
+
+    <br>
+    <div id="error-message"></div>
+    <div id="version-info">
+<br>Software developed by K.G.E. Brenner and Microsoft Copilot
+<br><br>
+Version 3.1. – 01.10.2025<br>
+-&nbspCurricula vitae for most UK persons were added<br>
+-&nbspCrazy Crroatia holiday pictures were added as slide show<br><br>
+Version 3.0. – 12.08.2025<br>
+-&nbspLots of new features!<br>
+-&nbspSome icon images have changed and the navigation has been tidied up<br>
+-&nbspVolume may be adjusted and music optionally plays through slide show<br>
+-&nbspDirect ancestors are now highlighted by yellow writing or borders<br>
+-&nbspGuided tours through the family tree have been introduced <br>
+-&nbspContents from the Koerber diaries has been added or updated<br>
+-&nbspEnglish translations of several curricula have been added
+<br><br>
+Version 2.4. – 16.07.2025<br>
+-&nbspCorrection of various errors in slide show and stucture images.<br>
+-&nbspLots more documents and pictures added
+<br><br>Version 2.3. – 14.07.2025
+<br>
+-&nbspCorrection of various errors in activating pages via text links.<br>
+-&nbspMore pictures in various slide shows and the MillinDilli show.<br>
+-&nbspSlide show with sound effects (see e.g.: Mock Albrecht / Pocket watch)
+<br><br>Version 2.2. – 02.07.2025
+<br>
+-&nbspImproved user interface for slide show with stop/restart function<br>
+&nbsp&nbspfull screen option and dynamic scaling for various devices incl. smart phones <br>
+-&nbspVideos working again with improved user interface 
+<br><br>
+Version 2.1. – 25.06.2025<br>
+-&nbspImproved user interface for family pictures with visible mouseover areas<br>
+ &nbsp&nbspmore detailed info on mouseover and calling up persons record with click<br>
+-&nbspEXIT button (top left) works all the way through the system - no need to<br>
+ &nbsp&nbspuse browser buttons to navigate<br>
+-&nbspKnow error: Videos on slide shows not functional 
+<br><br>
+Version 2.0. - 01.06.2025<br>
+-First production version for PC and tablets.
+    </div>
+  </div>
+</body>
+</html>

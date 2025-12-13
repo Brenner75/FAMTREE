@@ -1,0 +1,197 @@
+<html><head><style>                                                                                                                                           
+     html, body {height: 100vh;  margin: 0;  overflow-y: hidden; }                                                                                            
+     body {font-family: Arial, sans-serif; font-style:normal; margin: 10px; transition: background-image 0.5s ease-in-out;}                                   
+    .wichtig {color:yellow; font-style:normal; font-weight:bold text-decoration: none; }                                                                      
+    .autobutton {position: absolute; top: 5px;left: 979 z-index: 1000;}                                                                                       
+    .icon {width: 64px;height: 40px;display: flex;align-items: center;justify-content: center;font-size: 24px;                                                
+       background: no-repeat center center;background-size: contain;cursor: pointer;position: relative;}                                                      
+    .text{background:#FFF; opacity:1;font-size:0px; }                                                                                                         
+    .titline { position: absolute; left: 5px; top=900px;color:yellow;font-family: Arial, serif;                                                               
+       font-style:normal;font-weight:bold; font-size:30px;}                                                                                                   
+    .commline { color:black;font-family: Arial, serif; font-style:normal;font-weight:bold; font-size:18px}                                                    
+    #foto {border: 5px solid black;opacity: 0;transition: opacity 1s ease-in-out, background-color 0.5s ease-in-out;                                          
+       pointer-events: auto;z-index: 0;cursor: pointer;}                                                                                                      
+    * { margin:0; padding:0; box-sizing:border-box }/* 1) Reset & Grundgerüst */html, body { height:100% }                                                   
+    #fixed-container {position: fixed;top: 0;left: 0;z-index: 9999;pointer-events: auto;}                                                                     
+    #fixed-container img {pointer-events: auto;  cursor: pointer; display: block; width: auto;height: auto;                                                   
+       pointer-events: auto;/* wir setzen Breite & Höhe via JS */}                                                                                           
+    img#foto {cursor: pointer;}                                                                                                                               
+    .icon {width: 64px;height: 64px;flex: 0 0 auto;display: flex;align-items: center;justify-content: center;}                                                
+    .icon img {width: 64px;height: 64px;display: block;object-fit: contain;}                                                                                  
+    #button-row {background: rgba(0, 128, 255, 0.1);position: absolute;top: 10px;left: 50%;transform: translateX(-0%);                                        
+     width: 100%;max-width: 1200px;display: flex;flex-direction: row;justify-content: space-between;align-items: center;                                      
+     flex-wrap: nowrap; pointer-events: auto;  padding: 0;}                                                                                                   
+    #meinVideo {max-height: 80vh;max-width: 96vw;width: auto;height: auto;display: block;margin: 0 auto;                                                      
+     border: 5px solid black;pointer-events: auto;}                                                                                                           
+</style>                                                                                                                                                      
+<script>                                                                                                                                                      
+  let timer;                                                                                                                                                  
+  let running = false;                                                                                                                                        
+const maxIndex =  32;                                                                                                                                         
+const current = window.location.href.match(/ULTHME(\d+)\.HTM/);                                                                                               
+  const currentIndex = current ? parseInt(current[1], 10) : 0;                                                                                                
+  function startAutoNext() {                                                                                                                                  
+    if (!running) {                                                                                                                                           
+      sessionStorage.removeItem("manuellGestoppt");                                                                                                           
+      document.body.style.backgroundImage = "url('../A Icons/bg5.jpg')"; // „läuft“-Version                                                              
+      if (currentIndex >  maxIndex) {                                                                                                                         
+      stopAutoNext();                                                                                                                                         
+       const button = document.getElementById("autobutton");                                                                                                  
+       if (button) {                                                                                                                                          
+         button.style.display = "none";                                                                                                                       
+       }                                                                                                                                                      
+       const foto = document.getElementById("foto");                                                                                                          
+       if (foto) {                                                                                                                                            
+         foto.style.opacity = 1;                                                                                                                              
+         setTimeout(() => {                                                                                                                                   
+         foto.style.opacity = 0;                                                                                                                              
+         }, 3000);                                                                                                                                            
+       } else {                                                                                                                                               
+         console.warn("Das Element mit id='foto' wurde nicht gefunden.");                                                                                     
+       }                                                                                                                                                      
+       return;                                                                                                                                                
+     }                                                                                                                                                        
+     timer = setTimeout(() => {                                                                                                                               
+       const nextIndex = currentIndex + 1;                                                                                                                    
+const nextFile = "ULTHME" + nextIndex + ".HTM";                                                                                                               
+      window.location.href = nextFile;                                                                                                                        
+    }, 4000);                                                                                                                                                 
+     running = true;                                                                                                                                          
+     document.getElementById("autobuttonImg").src = "../A Icons/pause.jpg";                                                                                   
+   }                                                                                                                                                          
+}                                                                                                                                                             
+ function stopAutoNext() {                                                                                                                                    
+   clearTimeout(timer);                                                                                                                                       
+   running = false;                                                                                                                                           
+   sessionStorage.setItem("manuellGestoppt", "true");                                                                                                         
+if (currentIndex >  maxIndex) {                                                                                                                               
+   document.getElementById("autobuttonImg").src = "../A Icons/nospiel.jpg";                                                                                   
+   } else {                                                                                                                                                   
+   document.getElementById("autobuttonImg").src = "../A Icons/spiel.jpg";                                                                                     
+   }                                                                                                                                                          
+   document.body.style.backgroundImage = "url('../A Icons/bg12.jpg')";                                                                                        
+ }                                                                                                                                                            
+ function toggleAuto() {                                                                                                                                      
+   running ? stopAutoNext() : startAutoNext();                                                                                                                
+ }                                                                                                                                                            
+ window.onload = () => {                                                                                                                                      
+ const video = document.getElementById("meinVideo");                                                                                                          
+ if (video) {                                                                                                                                                 
+   console.log("🎥 Video aktiv – Diashow gestoppt.");                                                                                                     
+   stopAutoNext?.();                                                                                                                                          
+ } else {                                                                                                                                                     
+   const foto = document.getElementById("foto");                                                                                                              
+  if (foto) {                                                                                                                                                 
+     foto.style.opacity = 1;                                                                                                                                  
+   }                                                                                                                                                          
+   const gestoppt = sessionStorage.getItem("manuellGestoppt");                                                                                                
+   if (gestoppt === "true") {                                                                                                                                 
+     console.log("Slideshow wurde manuell gestoppt – kein Autoplay.");                                                                                      
+    document.body.style.backgroundImage = "url('../A Icons/bg12.jpg')";                                                                                       
+  } else {                                                                                                                                                    
+     startAutoNext?.();                                                                                                                                       
+   }                                                                                                                                                          
+ }                                                                                                                                                            
+};                                                                                                                                                            
+function goToLastPerson() {                                                                                                                                   
+  const url = localStorage.getItem('lastPersonPage');                                                                                                         
+  if (!url) return alert("Keine letzte Personenseite gefunden.");                                                                                             
+  if (window.opener && !window.opener.closed) {                                                                                                               
+    window.close(); // wichtig: Diashow-Fenster schließen                                                                                                    
+  } else {                                                                                                                                                    
+    window.location.href = url; // Fallback                                                                                                                   
+  }                                                                                                                                                           
+}                                                                                                                                                             
+</script></head><body><br><br><br><br>                                                                                                                        
+<div id="fixed-container"><div id="button-row">                                                                                                               
+  <div class="icon" onclick="goToLastPerson()" style="cursor: pointer;">                                                                                      
+  <img src="../A Icons/exit.jpg" title="Zur Personenseite zurück" />                                                                                         
+</div>                                                                                                                                                        
+<div class="icon"><a href="ULTHME0.HTM"><img src="../A Icons/diaone.jpg" width='64' height='64' title='First image'></a></div>                                
+<div class="icon"><a href="ULTHME31.HTM"><img src="../A Icons/diaminus.jpg" width='64' height='64' title='Back one image'></a></div>                          
+<div class="icon"><a href="javascript:toggleAuto()"><img id="autobuttonImg" src="../A Icons/spiel.jpg"title= 'Play / Stop'/></a></div>                        
+<div class="icon"><a href="ULTHME33.HTM"><img src="../A Icons/diaplus.jpg" width='64' height='64' title='Next image'></a></div>                               
+<div class="icon"><a href="ULTHME32.HTM"><img src="../A Icons/diaend.jpg" width='64' height='64' title='Last image'></a></div>                                
+</div>                                                                                                                                                        
+<div id="bildcontainer" style="position: absolute; top: 80px; left: 5px;">                                                                                    
+<img id="foto" src="IMG030.JPG" style="height: 700px; border: 5px solid black; opacity: 0; transition: opacity 1s ease-in-out; cursor: pointer;">             
+<br>For Full Screen Mode click on the image (toggle)                                                                                                          
+<h1 class=wichtig>CROATIA</h1>                                                                                                                                
+<h1 class=commline>Foto  33 /  33: </h1>                                                                                                                      
+</div>                                                                                                                                                        
+</div>                                                                                                                                                        
+<script>                                                                                                                                                      
+window.addEventListener('load', () => {                                                                                                                       
+  const img = document.getElementById("foto");                                                                                                                
+  const video = document.getElementById("meinVideo");                                                                                                         
+  const buttonRow = document.getElementById("button-row");                                                                                                    
+  const MAX_H = 950;                                                                                                                                          
+  const MAX_VIDEO_WIDTH = 960;                                                                                                                                
+  const MIN_BUTTON_WIDTH = 400;                                                                                                                               
+  if (img) {                                                                                                                                                  
+    img.addEventListener("click", () => {                                                                                                                     
+      if (!document.fullscreenElement) {                                                                                                                      
+        img.requestFullscreen?.();                                                                                                                            
+        img.webkitRequestFullscreen?.();                                                                                                                      
+        img.msRequestFullscreen?.();                                                                                                                          
+        stopAutoNext?.();                                                                                                                                     
+      } else {                                                                                                                                                
+        document.exitFullscreen?.();                                                                                                                          
+      }                                                                                                                                                       
+    });                                                                                                                                                       
+    const resizeImg = () => {                                                                                                                                 
+      const vh = window.innerHeight;                                                                                                                          
+      const vw = window.innerWidth;                                                                                                                           
+      const ratio = img.naturalWidth / img.naturalHeight;                                                                                                     
+      let h = Math.min(MAX_H, vh - 200);                                                                                                                      
+      let w = h * ratio;                                                                                                                                      
+      if (w > vw - 20) {                                                                                                                                      
+        w = vw - 20;                                                                                                                                          
+        h = w / ratio;                                                                                                                                        
+      }                                                                                                                                                       
+      img.style.width = w + 'px';                                                                                                                             
+      img.style.height = h + 'px';                                                                                                                            
+      if (buttonRow) {                                                                                                                                        
+        let bw= 2.5 * h / ratio;                                                                                                                              
+        if (bw > vw - 20) {                                                                                                                                   
+          bw = vw - 20;                                                                                                                                       
+        }                                                                                                                                                     
+        buttonRow.style.width = bw + 'px';                                                                                                                    
+        buttonRow.style.margin = '0 auto';                                                                                                                    
+      }                                                                                                                                                       
+    };                                                                                                                                                        
+    resizeImg();                                                                                                                                              
+    window.addEventListener('resize', resizeImg);                                                                                                             
+  }                                                                                                                                                           
+  else if (video) {                                                                                                                                           
+    console.log("🎥 Video aktiv – Diashow gestoppt.");                                                                                                    
+    stopAutoNext?.();                                                                                                                                         
+    video.addEventListener("click", () => {                                                                                                                   
+      if (!document.fullscreenElement) {                                                                                                                      
+        video.requestFullscreen?.();                                                                                                                          
+        video.webkitRequestFullscreen?.();                                                                                                                    
+        video.msRequestFullscreen?.();                                                                                                                        
+      } else {                                                                                                                                                
+        document.exitFullscreen?.();                                                                                                                          
+      }                                                                                                                                                       
+    });                                                                                                                                                       
+    const resizeVideo = () => {                                                                                                                               
+      const vw = window.innerWidth;                                                                                                                           
+      const w = Math.min(MAX_VIDEO_WIDTH, vw - 40);                                                                                                           
+      video.style.width = w + 'px';                                                                                                                           
+      video.style.height = 'auto';                                                                                                                            
+      if (buttonRow) {                                                                                                                                        
+        const btnWidth = Math.max(w, MIN_BUTTON_WIDTH);                                                                                                       
+        buttonRow.style.width = btnWidth + 'px';                                                                                                              
+        buttonRow.style.margin = '0 auto';                                                                                                                    
+      }                                                                                                                                                       
+    };                                                                                                                                                        
+    resizeVideo();                                                                                                                                            
+    window.addEventListener('resize', resizeVideo);                                                                                                           
+    document.body.style.backgroundImage = "url('../A Icons/bg12.jpg')";                                                                                       
+  }                                                                                                                                                           
+  else {                                                                                                                                                      
+    console.warn("⚠️ Weder Bild noch Video erkannt – kein Medieninhalt gefunden.");                                                                     
+  }                                                                                                                                                           
+});                                                                                                                                                           
+</script></body></html>                                                                                                                                       

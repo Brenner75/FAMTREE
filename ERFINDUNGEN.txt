@@ -1,0 +1,43 @@
+1492:die Entdeckung Amerikas;the discovery of America;
+1650;die Entdeckung des Vakuums;the discovery of the vacuum;
+1797;die Homoeopathie;the Homoeopathy;
+1821;die Mundharmonika;the mouth organ; 
+1843;der Rohstoff zur Papiererzeugung;the raw material for the paper production 
+1854;die Gluehbirne;the light bulb; 
+1859;das Telefon;the telephone; 
+1864;das Periodensystem der Elemente;the periodic system of chemical elements; 
+1866;der Dynamo;the dynamo;
+1873;die Jeans;Blue Jeans;
+1876;die Bakteriologie;the bakteriology;
+1881;die Strassenbahn;the tram;
+1885;das Motorrad;the motorbike;
+1886;das Automobil;the car;
+1887;der Plattenspieler;the record player;
+1890;der Dieselmotor;the Diesel engine;
+1894;das Gleitflugzeug;the glider (aeroplane);
+1895;die Roentgenstrahlung;X-rays;
+1879;das Aspirin;the Aspirin pills,
+1902;die Zuendkerze;the spark plug;
+1903;die Thermosflasche;the thermops flask;
+1905;das Spiel 'Mensch aergere dich nicht';the 'Ludo' game;
+1905;Einsteins Relativitaetstheorie;Einstein's theory of relativity;
+1907;die Zahnpasta;the tooth paste;
+1908;der Kaffeefilter;the coffee filter;
+1922;das Goldbaerchen;the 'Goldbaerchen' sweet;
+1925;die Kleinbildkamera;the compact camera;
+1928;das Tonband;the tape recorder;
+1929;der Teebeutel;the tea bag;
+1930;das Fernsehen;the television;
+1934;die Magnetschwebebahn;trains on magnetic rails; 
+1936;das Duesentriebwerk;the jet engine;
+1936;der Hubschrauber;the helicopter;
+1938;die Kernspaltung;the nuclear fission;
+1941;der Computer;the computer;
+1949;die Currywurst;the famouse 'curry wurst' in Berlin;
+1953;der Stollenschuh;the football boots;
+1958;der Duebel;the wall plug;
+1961;die Antibabypille;the contraceptive pill;
+1969;die Chipkarte;the chip card; 
+1971;der Airbag;the air bag;
+1987;das MP3-Format;the MP3-format
+1991;die Funkarmbanduhr;the electronic watch;

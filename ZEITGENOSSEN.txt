@@ -1,0 +1,95 @@
+1451;Kolumbus;M
+1452;Leonardo da Vinci;M
+1457;Michelangelo;M
+1469;Vasco da Gama;M
+1471;Albrecht Duerer;M
+1473;Kopernikus;M
+1483;Martin Luther;M
+1533;Elisabeth I.;W
+1542;Maria Stuart;W
+1546;Galileo Galilei;M
+1564;William Shakespeare;M
+1571;Johann Kepler;M
+1606;Rembrandt;M
+1638;Ludwig XIV.;M
+1643;Isaac Newton;M
+1672;Peter, der Grosse;M
+1685;Georg Friedrich Haendel;M
+1685;Johann Sebastian Bach;M
+1706;Benjamin Franklin;M
+1712;Friedrich, der Grpsse;M
+1717;Maria Trheresia;W
+1721;Madame de Pompadour;W
+1724;Immanuel Kant;M
+1728;James Cook;M;
+1728;Katharina, die Grosse;W;
+1732;George Washington;M;
+1732;Joseph Haydn;M;
+1736;James Watt;M;
+1755;Maria Antoinette;W;
+1756;Wolfgang Amadeus Mozart;M;
+1759;Friedrich Schiller;M;
+1761;Madame Tussaud;W;;
+1769;Napoleon Bonaparte;M;
+1770;Ludwig van Beethoven;M;
+1786;Carl Maria von Weber;M;
+1786;Wilhelm Grimm;M;
+1794;Johann Wolfgang von Goethe;M;
+1797;Franz Schubert;M;
+1809;Abraham Lincoln;M;
+1809;Charles Darwin;M;
+1810;Frederic Chopin;M;
+1810;Robert Schumann;M;
+1813;Giuseppe Verdi;M;
+1813;Richard Wagner;M;
+1815;Otto von Bismarck;M;
+1818;Karl Marx;M;
+1819;Queen Victoria;W;
+1828;Leo Tolstoi;M;
+1840;Claude Monet;M;
+1840;Peter Tschaikowski;M;
+1844;Fridrich Nietzsche;M;
+1847;Thomas Alva Edison;M;
+1848;Paul Gaguin;M;
+1853;Vincent van Gogh;M;
+1856;Sigmund Freud;M;
+1864;Richard Strauss;M;
+1866;Wassily Kandinsky;M;
+1867;Marie Curie;W;
+1869;Mahatma Gandhi;M;
+1870;Lenin;M;
+1871;Rosa Luxemburg;W;
+1874;Winston Churchill;M;
+1876;Mata Hari;W;
+1876;Konrad Adenauer;M;
+1879;Albert Einstein;M;
+1880;Franz Marc;M;
+1881;Picasso;M;
+1883;Coco Chanell;M;
+1890;Agatha Christie;W;
+1899;Ernest Hemingway;M;
+1901;Louis Armstrong;M;
+1901;Marlene Dietrich;W;
+1901;Walt Disney;M;
+1904;Salvadoire Dali;M;
+1907;Astrid Lindgren;W;
+1910;Mutter Theresa;W;
+1913;Willy Brandt;M;
+1915;Frank Sinatra;M;
+1917;John F. Kennedy;M;
+1918;Nelson Mandela;M;
+1926;Marilyn Monroe;
+1928;Andy Warhol;M;
+1928;Che Guevara;M;
+1929;Martin Luther King;M;
+1929;Audrey Hepburn;W;
+1930;Niel Armstrong;M;
+1932;Johnny Cash;M;
+1935;Elvis Presley;M;
+1938;Romy Schneider;W;
+1940;John Lennon;M;
+1945;Bob Marley;M;
+1946;Freddie Mercury;M;
+1957;Falco;M;
+1961;Lady Di;W;
+1958;Michael Jackson;M;

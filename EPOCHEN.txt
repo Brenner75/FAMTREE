@@ -1,0 +1,7 @@
+2000;der heutigen Zeit;
+1917;der Moderne;of modern times;
+1840;des Historismus;of Historicism;
+1770;des Klassizismus;of Classicism;
+1730;des Rokoko;of Rococo;
+1580;des Barock;of Baroque;
+1400;der Renaissance;of Renaissance;

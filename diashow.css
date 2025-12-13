@@ -1,0 +1,108 @@
+let timer;
+let running = false;
+
+function getCurrentIndex() {
+  const match = window.location.href.match(/DOCHMD(\d+)\.HTM/);
+  return match ? parseInt(match[1], 10) : 0;
+}
+
+function wechselHintergrund(url) {
+  document.body.style.setProperty('--background-url', `url('${url}')`);
+
+  // 💡 Nur Reflow für Transition, aber KEIN Entfernen mehr!
+  document.body.classList.remove('bg-aktiv');
+  void document.body.offsetWidth;
+  document.body.classList.add('bg-aktiv');
+
+  console.log('Hintergrund gesetzt auf:', url);
+}
+
+function startAutoNext() {
+  localStorage.setItem('diashowModus', 'play');
+
+  if (!running) {
+    const current = getCurrentIndex();
+
+    if (current >= 18) {
+      stopAutoNext();
+      const finale = document.getElementById("finaleBild");
+      if (finale) {
+        finale.style.opacity = 1;
+      }
+      wechselHintergrund("../A Icons/bg5.jpg");
+      return;
+    }
+
+    wechselHintergrund("../A Icons/bg5.jpg");
+
+    timer = setTimeout(() => {
+      const next = current + 1;
+      window.location.href = "DOCHMD" + next + ".HTM";
+    }, 4000);
+
+    running = true;
+
+    const btn = document.getElementById("autobuttonImg");
+    if (btn) btn.src = "../A Icons/pause.jpg";
+  }
+}
+
+function stopAutoNext() {
+  localStorage.setItem('diashowModus', 'stop');
+
+  clearTimeout(timer);
+  running = false;
+
+  const btn = document.getElementById("autobuttonImg");
+  if (btn) btn.src = "../A Icons/spiel.jpg";
+
+  wechselHintergrund("../A Icons/bg12.jpg");
+  document.body.classList.remove("bg-aktiv");
+
+  document.body.classList.add("fade-bg");
+  setTimeout(() => {
+    document.body.classList.remove("fade-bg");
+  }, 300);
+}
+
+function toggleAuto() {
+  running ? stopAutoNext() : startAutoNext();
+}
+
+function goBack() {
+  const current = getCurrentIndex();
+  if (current > 0) {
+    window.location.href = "DOCHMD" + (current - 1) + ".HTM";
+  }
+}
+
+function goForward() {
+  const current = getCurrentIndex();
+  window.location.href = "DOCHMD" + (current + 1) + ".HTM";
+}
+
+// Diese Funktionen global machen, damit onclick im HTML funktioniert:
+window.toggleAuto = toggleAuto;
+window.goBack = goBack;
+window.goForward = goForward;
+
+window.onload = () => {
+  const letzterModus = localStorage.getItem('diashowModus');
+
+  if (letzterModus === 'play') {
+    startAutoNext();
+  } else {
+    stopAutoNext(); // optional, sorgt für sauberes Hintergrundbild im Pausenmodus
+  }
+
+  const foto = document.getElementById("foto");
+  if (foto) {
+    foto.addEventListener("click", () => {
+      if (!document.fullscreenElement) {
+        foto.requestFullscreen?.();
+      } else {
+        document.exitFullscreen?.();
+      }
+    });
+  }
+};
